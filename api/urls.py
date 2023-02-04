@@ -6,8 +6,7 @@ urlpatterns = [
     path('welcome/', views.welcome),
 ] """
 # OR
-from .views import home, welcome
+from .views import RoomView
 urlpatterns = [
-    path('', home),
-    path('welcome/', welcome),
+    path('room/', RoomView.as_view()),
 ]
